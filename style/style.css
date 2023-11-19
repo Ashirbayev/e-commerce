@@ -1,0 +1,631 @@
+@font-face {
+    font-family: Integral;
+    src: url("../fonts/IntegralCF-Bold.woff2") format("woff2"),
+    url("../fonts/IntegralCF-Bold.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Satoshi;
+    src: url("../fonts/Satoshi-Black.woff2") format("woff2"),
+    url("../fonts/Satoshi-Black.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+}
+
+
+h1 {
+    font-family: Integral, sans-serif;
+    font-size: 64px;
+    color: #000;
+    font-style: normal;
+    font-weight: 700;
+    leading-trim: both;
+}
+
+
+h2 {
+    font-family: Integral, sans-serif;
+}
+
+.container {
+    padding: 0 100px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Satoshi, sans-serif;
+    background-color: #fff;
+}
+
+
+.black-bar {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+
+    color: #000;
+
+    leading-trim: both;
+
+    text-edge: cap;
+    font-family: Integral;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin-right: 10px;
+    position: relative;
+}
+
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    padding: 12px 16px;
+    gap: 12px;
+    flex: 1 0 0;
+    border-radius: 62px;
+    background: #F0F0F0;
+    padding-left: 60px;
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+    background-position: left 15px center;
+
+    overflow: hidden;
+}
+
+.search-input {
+
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 24px;
+
+    padding-left: 13px;
+
+
+    color: rgba(0, 0, 0, 0.40);
+
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+.shop-link {
+    background-image: url("../img/strelka.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px; /* Регулируйте значение, чтобы подогнать под размер иконки */
+    background-size: 20px; /* Регулируйте размер иконки */
+    display: inline-block; /* Чтобы установить фон только для текста, а не для всего блока */
+    line-height: 40px; /* Подберите под размер блока */
+    vertical-align: middle; /* Выравнивание иконки по вертикали с текстом */
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon,
+.login-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.cart-icon,
+.login-icon {
+    font-size: 1.2em;
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .black-bar {
+        font-size: 0.8em;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+
+    .search-form {
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    .cart-icon,
+    .login-icon {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+
+
+.style-section {
+    position: relative;
+    background: #F2F0F1 url('../img/models.png') no-repeat center top;
+
+    background-size: cover;
+
+    text-align: left; /* Выравнивание текста слева */
+    padding: 100px 0; /* Регулируйте отступы по вашему усмотрению */
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-block {
+    max-width: 50%;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.shop-now-btn {
+    display: flex;
+    width: 210px;
+    height: 52px;
+    padding: 16px 54px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+
+
+    border-radius: 62px;
+    background: #000;
+    color: #fff;
+
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.statistics {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-item {
+    text-align: left;
+}
+
+h3 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+
+.emblem-section {
+    text-align: center;
+    background: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.black-bar {
+    margin-bottom: 20px;
+}
+
+.emblem-container {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.emblem {
+    width: 50px; /* Регулируйте размер эмблем по вашему усмотрению */
+    height: 50px;
+    margin: 0 10px; /* Регулируйте отступ между эмблемами по вашему усмотрению */
+}
+
+
+.products-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.product-category {
+    margin-bottom: 30px;
+}
+
+.category-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.product {
+    flex-grow: 1; /* Расширение до полной ширины с учетом отступа */
+    text-align: center;
+    overflow: hidden; /* Обрезание изображения, чтобы сохранить пропорции */
+}
+
+.product img {
+    width: 100%; /* Изображение будет занимать всю доступную ширину */
+    height: auto; /* Сохранение пропорций изображения */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.ratings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.rating {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+
+.body-section {
+    padding: 20px;
+
+    background-color: #f0f0f0;
+    border-radius: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    flex: 0 0 40%; /* или 60% в зависимости от положения картинки в ряду */
+    margin-right: 10px; /* Отступ между картинками */
+    align-self: stretch; /* Выравнивание по высоте */
+}
+
+.image-container-60 {
+    flex: 0 0 60%;
+}
+
+.image-container-60 img {
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.testimonial-section {
+    text-align: center;
+    padding: 20px;
+
+}
+
+.testimonial-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.arrows {
+    display: flex;
+    align-items: center;
+}
+
+.arrow-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.testimonial-block {
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    margin-right: 10px;
+    padding: 28px 19px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 24px 342px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+
+
+.client-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.client-name {
+    font-weight: bold;
+}
+
+
+
+.testimonial-text {
+
+    color: rgba(0, 0, 0, 0.60);
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    align-self: stretch;
+}
+
+.arrows {
+    margin-top: 20px;
+}
+
+
+.newsletter-section {
+    background-color: #000;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.newsletter-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter-text {
+    flex: 1;
+    max-width: 60%;
+    margin-right: 180px;
+}
+
+.newsletter-text h2 {
+    font-size: 36px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.newsletter-form {
+    flex: 1;
+
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.icon {
+
+    margin: 0 10px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    padding: 15px 20px;
+    background: #ffffff;
+    color: rgba(255, 255, 255, 0.8);
+
+
+    font-size: 16px;
+}
+
+button {
+    flex: 1;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background: #ffffff;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    width: 100%;
+
+    cursor: pointer;
+}
+
+input img {
+    background: #ffffff;
+}
+
+
+.footer-section {
+    background-color: #fff;
+    padding: 30px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    padding-bottom: 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    color: rgba(0, 0, 0, 0.60);
+    text-align: right;
+    font-family: Satoshi;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.logo-block {
+    font-size: 33.455px;
+}
+
+.logo-description {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.60);
+}
+
+.social-icons {
+
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    /* Стили для иконки */
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links div {
+    text-align: left;
+}
+
+.footer-link {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.footer-links p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.60);
+}
+
+.payment-icons {
+    display: flex;
+
+}
+
+.payment-icon {
+    width: 40px;
+    height: 40px;
+}
+
